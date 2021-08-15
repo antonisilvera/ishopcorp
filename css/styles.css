@@ -1,0 +1,852 @@
+/*Fuentes*/
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url(fonts/websymbols-regular-webfont.eot);
+    src: url(fonts/websymbols-regular-webfont.eot#iefix) format('embedded-opentype'),
+         url(fonts/websymbols-regular-webfont.woff) format('woff'),
+         url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
+         url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fin de fuentes*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.icon{
+    font-family: WebSymbolsRegular;
+    color: #808080;
+}
+
+/**MENU**/
+.wrap{
+    width: 100%;
+    margin: 0px auto;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #28A745;
+    font-family: 'Teko';
+    color: white;
+    display: inline-flex;
+}
+
+#category{
+    /*border: 1px solid red;*/
+    height: 100%;
+    width: 10%;
+    font-size: 24px;
+}
+
+#category > ul{
+    list-style: none;
+    text-decoration: none;
+    height: 100%;
+    margin: 0px auto;
+}
+
+#category > ul >li{
+    width: 80%;
+    height: 50%;
+    margin-inline: 12px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#category > ul > li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-inline: 6%;
+    padding-top: 10px;
+}
+
+#category > ul > li > ul{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 3px 3px gray;
+    z-index: 1;
+    width: 330px;
+    transform: translate3d(0, 0, 0);
+    font-size: 15px;
+    font-family: Verdana;
+}
+
+#category > ul > li:hover{
+    background-color: white;
+    border: 1px solid gray;
+}
+
+#category > ul > li:hover a{
+    color: #666666;
+}
+
+#category > ul > li:hover >ul{
+    display: block;
+}
+
+#category > ul > li:hover >ul{
+    background-color: white;
+    border-bottom: 1px solid #D6D6D6;
+    transition: 300ms;
+    list-style: none;
+}
+
+#category > ul > li:hover >ul > li a{
+    color: #666666;
+    height: 50px;
+    padding-top: 15px;
+    padding-inline: 4%;
+    
+}
+
+#category > ul > li:hover >ul > li:hover{
+    box-shadow: 0px 0px 2px #ccc;
+    border: 1px solid gray;
+    background-color: #ccc;
+}
+
+#logo{
+    /*border: 1px solid red;*/
+    height: 100%;
+    width: 30%;
+    margin: 0px auto;
+
+}
+
+#logo > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-inline: 14px;
+}
+
+#logo img{
+    background-color: white;
+    float: left;
+    height: 60px;
+    width: 56px;
+    padding: 7px;
+    border-radius: 31px;
+    margin-top: 20px;
+}
+#logo p{
+    color: white;
+    padding-left: 3%;
+    float: left;
+    height: 100%;
+    letter-spacing: 2px;
+    width: 225px;
+    padding-top: 10px;
+    font-size: 57px;
+    text-shadow: 0px 0px 2px #444, 0px 1px 3px #444, 0px 2px 3px #444, 0px 3px 4px #444, 0px 4px 5px #444;
+}
+
+#busqueda{
+    /*border: 1px solid red;*/
+    height: 98px;
+    width: 40%;
+    padding-top: 2%;
+}
+
+#busqueda .barrabuscar{
+    width: 70%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 22px;
+    height: 35px;
+    padding-left: 23px;
+    border: 1px solid #444;
+    border-radius: 5px 0px 0px 5px;
+    font-family: Verdana;
+    font-size: 17px;
+}
+
+#busqueda .botsearch{
+    font-size: 20px;
+    margin-top: 5%;
+    padding-inline: 10px;
+    height: 35px;
+    background: coral;
+    border: 1px solid #444;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#busqueda .botsearch .icon{
+    color: black;
+}
+
+#busqueda .botsearch:hover{
+    background-color: orangered;
+}
+
+#menu{
+    height: 70%;
+    width: 20%;
+    margin-top: 30px;
+}
+
+#menu > ul{
+    list-style: none;
+    text-decoration: none;
+    height: 100%;
+    margin: 0px auto;
+}
+
+#menu > ul >li{
+    float: left;
+    width: 35%;
+    height: 100%;
+    margin-inline: 3%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#menu > ul > li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-inline: 28%;
+    padding-top: 14px;
+}
+
+#menu > ul > li > ul{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+    width: 228px;
+    transform: translate3d(-136px, 0, 0);
+    font-size: 15px;
+    font-family: Verdana;
+}
+
+#menu > ul > li:hover{
+    background-color: white;
+    border: 1px solid gray;
+}
+
+#menu > ul > li:hover a{
+    color: #666666;
+}
+
+#menu > ul > li:hover >ul{
+    display: block;
+}
+
+#menu > ul > li:hover >ul{
+    background-color: white;
+    border-bottom: 1px solid #D6D6D6;
+    transition: 300ms;
+    list-style: none;
+}
+
+#menu > ul > li:hover >ul > li a{
+    color: #666666;
+    height: 50px;
+    padding-top: 15px;
+    padding-inline: 17%;
+    
+}
+
+#menu > ul > li:hover >ul > li:hover{
+    box-shadow: 0px 0px 2px #ccc;
+    border: 1px solid gray;
+    background-color: #ccc;
+}
+
+/**FIN MENU**/
+
+
+/**INICIO FOOTER**/
+#footer{
+    width: 100%;
+    height: 140px;
+    background-color: #F7F7F7;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+#menu_footer{
+    width: 60%;
+    float: left;
+    display: inline-flex;
+}
+
+#menu_footer h5{
+    color: #444;
+    font-weight: bold;
+}
+
+#menu_footer ul li{
+    list-style: none;
+}
+
+#menu_footer ul li a{
+    text-decoration: none;
+    color: #444;
+}
+
+#colum_acerca, #colum_ayuda, #colum_redes{
+    height: 100%;
+    width: 250px;
+    margin-right: 20px;
+}
+
+#colum_acerca{
+    margin-left: 40px;
+}
+
+#footer .info{
+    float: right;
+    line-height: 100px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #444;
+}
+
+
+/**FIN MENU**/
+
+/*NUEVO AGREGADO*/
+body{
+    /*background: url("../img/pattern.png");*/
+    background-color: #EDEDED !important;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*Toda la caja central*/
+#container{
+    float: left;
+    width: 90%;
+    border: 2px solid #E5E5E5;
+    margin: 40px auto;
+    margin-left: 5%;
+    padding: 15px;
+    padding-top: 40px;
+    background-color: white;
+    font-family: 'Roboto';
+    box-shadow: 1px 2px 5px gray;
+}
+
+/*Parte de izquierda*/
+#central{
+    width: 65%;
+    padding: 20px;
+    float: left;
+}
+
+#central .separador{
+    margin: 40px;
+    border: 2px solid #E5E5E5;
+}
+#central div .descripcion {
+    height: 40px;
+    padding-top: 20px;
+}
+
+#central div .descripcion h4{
+    border: 2px solid black;
+    font-size: 30px;
+}
+/*Fin Parte de izquierda*/
+
+/*Parte derecha*/
+#lateral{
+    
+    width: 35%;
+    padding: 20px;
+    padding-top: 40px;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    float: right;
+}
+
+
+div .titulo{
+    height: 75px;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+div .precio{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div .selector{
+    height: 60px;
+}
+
+div .custom-select{
+    font-family: 'Roboto';
+}
+
+div .boton{
+    height: 50px;
+    width: 100%;
+    background-color: #3483FA;
+    font-size: 20px;
+    line-height: 10px;
+    color: white;
+}
+div .boton:hover{
+    font-size: 25px;
+    color: white;
+    transition: all 300ms;  
+}
+div .subtexto{
+
+    height: 70px;
+    padding-top: 15px;   
+    font-size: 16px;
+    color: gray;
+    
+}
+/*Fin Parte derecha*/
+/*FIN DE LO AGREGADO*/
+
+/*Body del index*/
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    min-height: 500px;
+    padding-inline: 6%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects a{
+    text-decoration: none !important;
+    margin: 6px;
+}
+
+.cards{
+    width: 224px;
+    height: 330px;
+    border: 2px solid #D9D9D9;  
+    border-radius: 15px;
+    color: #444;
+    background-color: white;
+}
+
+.cards img{
+    width: 100%;
+    height: 224px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.cards .cards-body{
+    padding: 10px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.cards .cards-body .cardtitulo{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.cards .cards-body .cardprecio{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*Fin Body del index*/
+
+/*Vista Contacto*/
+#contacto{
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px;
+}
+
+#contacto h1{
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 36%;
+}
+
+/*Fin Vista Contacto*/
+
+/* Inicio Carrito */
+div#carvacio{
+    margin: 0px auto;
+    
+}
+
+#caja{
+    height: 227px;
+    width: 864px;
+    /*border: 3px solid #444;*/
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+div#carmid {
+    float: left;
+    /*border: 2px solid red;*/
+    width: 66%;
+}
+
+div #carmid img{
+    height: 201px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+div#carlat {
+    float: left;
+    border: 4px solid #444;
+    border-radius: 10px;
+    width: 34%;
+    height: 400px;
+}
+
+#caja .izquierda{
+    float: left;
+    border: 1px solid #444;
+    border-radius: 10px 0px 0px 10px;
+    height: 203px;
+    width: 202px;
+    box-shadow: 0px 1px 5px #ccc,
+                0px 2px 5px #ccc,
+                0px 3px 5px #ccc,
+                0px 4px 5px #ccc,
+                0px 5px 5px #ccc;
+}
+
+#caja .derecha{
+    float: left;
+    border: 1px solid #444;
+    border-radius: 0px 10px 10px 0px;
+    height: 203px;
+    width: 64%;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-shadow: 1px 1px 5px #ccc,
+                2px 2px 5px #ccc,
+                3px 3px 5px #ccc,
+                4px 4px 5px #ccc,
+                5px 5px 5px #ccc;
+}
+
+#caja .derecha h3{
+    margin-bottom: 40px;
+    margin-right: 24px;
+}
+
+#caja .derecha .prec{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+#caja .derecha .cant{
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+#caja .derecha .cant .custom-select {
+    width: 125px;
+    font-size: 20px
+}
+
+div#carlat .titder{
+    border-bottom: 4px solid #444;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 6%;
+}
+
+div#carlat .titder text{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+div#carlat .bodyder{
+    /*border: 1px solid green;*/
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div#carlat .bodyder .boderte{
+    float: left;
+    /*border: 1px solid orange;*/
+    margin-bottom: 10px;
+    height: 50px;
+    width: 52%;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+div#carlat .bodyder .boderteder{
+    float: left;
+    /*border: 1px solid orange;*/
+    margin-bottom: 10px;
+    height: 50px;
+    width: 48%;
+    font-size: 30px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+div#carlat .bodyder .total{
+    border-top: 3px solid #444;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+div#carlat button{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+/* Fin Carrito */
+/* Inicio Registrouser */
+div#registro{
+    float: left;
+    width: 60%;
+    border-right: 6px solid #444;;
+}
+
+div#registro h3{
+    padding-left: 21%;
+    font-weight: bold;
+}
+
+div #user{
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div #user text{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div .bton{
+    width: 60%;
+    margin-left: 20%;
+}
+
+div#iniciosesion{
+    float: left;
+    width: 40%;
+    /*border: 4px solid #444;*/
+    padding-left: 20px;
+}
+
+div#iniciosesion h3{
+    padding-left: 23%;
+    font-weight: bold;
+}
+
+div#iniciosesion a{
+    color: #444;
+    text-decoration: none;
+    padding-left: 26%;
+}
+
+/* Fin Registrouser */
+
+/*Inicio Forgetpass*/
+#forgetpass{
+    height: 700px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #444;
+    padding: 30px;
+}
+
+#forgetpass .cabeza{
+    border-bottom: 4px solid #ccc;
+    width: 100%;
+    padding-left: 30%;
+    padding-bottom: 2%;
+}
+
+#forgetpass .cuerpo{
+    margin-top: 40px;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+#forgetpass .cuerpo .btnenviar{
+    margin-top: 20px;
+    width: 25%;
+}
+
+/*Fin Forgetpass*/
+/*###### Inicio Mi perfil ######*/
+div #miperfil{
+    border: 2px solid #444;
+}
+
+.fotoperfil {
+    float: left;
+    border: 1px solid #cccc;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.derech{
+    border: 1px solid #444;
+}
+
+/*###### Fin Mi perfil ######*/
+
+@media (max-width: 1038px){
+    #category{
+        width: 12%;
+    }
+
+    #category > ul > li{
+        width: 100%;
+        margin-inline: 2px;
+    }
+    #category > ul > li a{
+        padding-inline: 0%;
+    }
+    #logo img{
+        display: none;
+    }
+
+    #logo p{
+        padding-left: 7%;
+    }
+
+    #menu > ul > li a{
+        padding-inline: 18%;
+    }
+}
+
+@media (max-width: 850px){
+    #category > ul > li{
+        margin-inline: 10px;
+    }
+
+    #busqueda{
+        display: none;
+    }
+
+    #menu > ul > li a{
+        padding-inline: 12%;
+    }
+
+    #menu > ul > li:hover > ul > li a{
+        padding-inline: 15%;
+    }
+}
+
+@media (max-width: 770px){
+    #category{
+        width: 15%;
+    }
+
+}
+
+@media (max-width: 620px){
+    #category{
+        width: 18%;
+    }
+
+    #logo{
+        width: 58%;
+    }
+
+    #logo p{
+        padding-left: 12%;
+    }
+
+    #menu{
+        width: 24%;
+    }
+
+}
+
+@media (max-width: 530px){
+    #category{
+        width: 20%;
+    }
+    #logo{
+        width: 58%;
+    }
+
+    #logo p{
+        padding-left: 4%;
+    }
+    #menu{
+        width: 28%;
+    }
+
+}
+
+@media (max-width: 488px){
+    #category{
+        width: 25%;
+    }
+    #logo{
+        width: 70%;
+    }
+    #menu{
+        display: none;
+    }
+}
+
+@media (max-width: 360px){
+    #category{
+        width: 30%;
+        margin-inline: 0px;
+    }
+    #category > ul > li{
+        margin-inline: 0px;
+    }
+    #category > ul > li a {
+        padding-inline: 5%;
+    }
+    #logo{
+        width: 70%;
+    }
+    #logo > a{
+        padding-inline: 0px;
+    }
+    #logo p{
+        padding-left: 12px;
+        font-size: 50px;
+    }
+    #menu{
+        display: none;
+    }
+}
